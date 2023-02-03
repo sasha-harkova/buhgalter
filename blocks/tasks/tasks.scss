@@ -10,6 +10,7 @@
   }
 
   &__svg-top {
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: 100%;
@@ -17,6 +18,7 @@
   }
 
   &__svg-middle {
+    width: 100%;
     transform: rotate(180deg);
     position: absolute;
     left: 0;
@@ -26,6 +28,7 @@
   }
 
   &__svg-bottom {
+    width: 100%;
     transform: rotate(180deg);
     position: absolute;
     left: 0;
@@ -51,7 +54,6 @@
     width: 1170px;
     margin: 0 auto;
     box-sizing: border-box;
-    //background-color: #FBF4EC;
   }
 
   &__subtitle {

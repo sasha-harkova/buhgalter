@@ -51,6 +51,7 @@
 @media screen and (max-width: 640px) {
   .button {
     width: 300px;
+    max-height: max-content;
   }
 }
 .heading {
@@ -469,12 +470,14 @@
   position: relative;
 }
 .tasks__svg-top {
+  width: 100%;
   position: absolute;
   left: 0;
   bottom: 100%;
   z-index: -1;
 }
 .tasks__svg-middle {
+  width: 100%;
   transform: rotate(180deg);
   position: absolute;
   left: 0;
@@ -483,6 +486,7 @@
   display: none;
 }
 .tasks__svg-bottom {
+  width: 100%;
   transform: rotate(180deg);
   position: absolute;
   left: 0;
@@ -1031,7 +1035,7 @@
   transform: rotate(225deg);
 }
 .tabs__link_active #safe {
-  background: url("./image/safe.png") right -140px top -90px/450px no-repeat;
+  background: url("../image/safe.png") right -140px top -90px/450px no-repeat;
 }
 .tabs__link_type_marker {
   position: relative;
@@ -1049,10 +1053,10 @@
   content: "✔";
 }
 .tabs__link_type_marker > .tabs__button {
-  background: url("../../image/white_plus_button.svg") center/12px 12px no-repeat, linear-gradient(0deg, rgb(250, 255, 0) 0%, rgb(230, 75, 19) 100%);
+  background: url("../image/white_plus_button.svg") center/12px 12px no-repeat, linear-gradient(0deg, rgb(250, 255, 0) 0%, rgb(230, 75, 19) 100%);
 }
 .tabs__link_type_marker > .tabs__button_type_rorate {
-  background: url("../..//image/plus_button.svg") #FFFFFF center/12px 12px no-repeat;
+  background: url("../image/plus_button.svg") #FFFFFF center/12px 12px no-repeat;
   transform: rotate(45deg);
   transition-delay: 0s;
 }
@@ -1069,7 +1073,7 @@
 .tabs__button {
   width: 32px;
   height: 32px;
-  background: url("../..//image/plus_button.svg") #FFFFFF center/12px 12px no-repeat;
+  background: url("../image/plus_button.svg") #FFFFFF center/12px 12px no-repeat;
   border-radius: 50%;
   position: absolute;
   top: 40%;
@@ -1268,10 +1272,10 @@
 }
 @media screen and (max-width: 640px) {
   .tabs {
-    margin: 0 15px;
+    margin: 0 auto;
   }
   .tabs__links {
-    width: 360px;
+    max-width: 360px;
     margin: 0 auto;
   }
   .tabs__link {
@@ -1790,7 +1794,7 @@
 }
 @media screen and (max-width: 960px) {
   .scheme {
-    width: 360px;
+    max-width: 360px;
     margin: 45px auto 30px;
     flex-direction: column;
     align-items: flex-start;

@@ -100,7 +100,7 @@
       }
 
       #safe {
-        background: url('./image/safe.png') right -140px top -90px/450px no-repeat;
+        background: url('../image/safe.png') right -140px top -90px/450px no-repeat;
       }
     }
 
@@ -121,10 +121,10 @@
       }
 
       & > .tabs__button {
-        background: url('../../image/white_plus_button.svg') center/12px 12px no-repeat, linear-gradient(0deg, rgba(250,255,0,1) 0%, rgba(230,75,19,1) 100%);        
+        background: url('../image/white_plus_button.svg') center/12px 12px no-repeat, linear-gradient(0deg, rgba(250,255,0,1) 0%, rgba(230,75,19,1) 100%);        
 
         &_type_rorate {
-          background: url('../..//image/plus_button.svg') #FFFFFF center/12px 12px no-repeat;
+          background: url('../image/plus_button.svg') #FFFFFF center/12px 12px no-repeat;
           transform: rotate(45deg);
           transition-delay: 0s;
         }
@@ -146,7 +146,7 @@
   &__button {
     width: 32px;
     height: 32px;
-    background: url('../..//image/plus_button.svg') #FFFFFF center/12px 12px no-repeat;
+    background: url('../image/plus_button.svg') #FFFFFF center/12px 12px no-repeat;
     border-radius: 50%;
     position: absolute;
     top: 40%;
@@ -332,10 +332,10 @@
 
 @media screen and (max-width: 640px) {
   .tabs {
-    margin: 0 15px;
+    margin: 0 auto;
 
     &__links {
-      width: $width-for-blocks-S;
+      max-width: $width-for-blocks-S;
       margin: 0 auto;
     }  
   
