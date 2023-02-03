@@ -250,7 +250,7 @@
 
 @media screen and (max-width: 960px) {
   .scheme {
-    max-width: $width-for-blocks-S;
+    width: $width-for-blocks-S;
     margin: 45px auto 30px;
     flex-direction: column;
     align-items: flex-start;
