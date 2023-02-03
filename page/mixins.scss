@@ -1,0 +1,95 @@
+$width-for-blocks-XL: 620px;
+$width-for-blocks-L: 570px;
+$width-for-blocks-M: 500px;
+$width-for-blocks-S: 360px;
+$width-for-text-in-blocks-L: 530px;
+$width-for-text-in-blocks-M: 480px;
+$width-for-text-in-blocks-S: 320px;
+
+@mixin titles-L {
+  font-family: 'Montserrat', Arial, serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;  
+  color: #000000;
+}
+
+@mixin titles-M {
+  font-family: 'Montserrat', Arial, serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;  
+  color: #000000;
+}
+
+@mixin titles-S {
+  font-family: 'Montserrat', Arial, serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;  
+  color: #000000;
+}
+
+@mixin Montserrat-text-L($weight, $style) {
+  font-family: 'Montserrat', Arial, serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+@mixin Montserrat-text-M($weight, $style) {
+  font-family: 'Montserrat', Arial, serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+@mixin Montserrat-text-S($weight, $style) {
+  font-family: 'Montserrat', Arial, serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+@mixin Open-Sans-text-L($weight, $style) {
+  font-family: 'Open Sans', Arial, serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@mixin Open-Sans-text-M($weight, $style) {
+  font-family: 'Open Sans', Arial, serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@mixin Open-Sans-text-S($weight, $style) {
+  font-family: 'Open Sans', Arial, serif;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+@mixin vertical-gradient {
+  background: rgb(250,255,0) ;
+  background: linear-gradient(0deg, rgba(250,255,0,1) 0%, rgba(230,75,19,1) 100%);   
+}
+
+@mixin horizontal-gradient {
+  background: rgb(209,75,95);
+  background: linear-gradient(0deg, rgba(209,75,95,1) 0%, rgba(239,142,24,1) 100%);
+}
+
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 19px 33px 0px rgba(186, 74, 44, 0.26);
+  -moz-box-shadow: 0px 19px 33px 0px rgba(186, 74, 44, 0.26);
+  box-shadow: 0px 19px 33px 0px rgba(186, 74, 44, 0.26);
+}

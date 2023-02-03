@@ -1,0 +1,144 @@
+.label {
+  width: 300px;
+  height: 120px;
+  @include horizontal-gradient;  
+  border-bottom-left-radius: 350px 250px;
+  border-bottom-right-radius: 250px 200px;
+  position: relative;
+  float: right;
+
+  &__image {
+    max-width: 100%;    
+  }
+
+  & #books {
+    -moz-transform: translate(10%, -25%) scaleX(-1); 
+    -o-transform: translate(10%, -25%) scaleX(-1); 
+    -webkit-transform: translate(10%, -25%) scaleX(-1); 
+    transform: translate(10%, -25%) scaleX(-1); 
+  }
+
+  & #phone {
+    -moz-transform: translate(-15%, -35%) scaleX(-1);
+    -o-transform: translate(-15%, -35%) scaleX(-1);
+    -webkit-transform: translate(-15%, -35%) scaleX(-1);
+    transform: translate(-15%, -35%) scaleX(-1); 
+  }
+
+  & #book-with-pencil {
+    width: 80%;
+    -moz-transform: translate(20%, -20%);
+    -o-transform: translate(20%, -20%);
+    -webkit-transform: translate(20%, -20%);
+    transform: translate(20%, -20%);
+  }
+
+  & #chair {
+    width: 70%;
+    -moz-transform: translate(-15%, -35%) scaleX(-1);
+    -o-transform: translate(-15%, -35%) scaleX(-1);
+    -webkit-transform: translate(-15%, -35%) scaleX(-1);
+    transform: translate(35%, -30%) scaleX(-1); 
+  }
+
+  & #plane {
+    -moz-transform: translate(10%, -35%) rotate(225deg) scaleX(-1);
+    -o-transform: translate(10%, -35%) rotate(225deg) scaleX(-1);
+    -webkit-transform: translate(10%, -35%) rotate(225deg) scaleX(-1);
+    transform: translate(10%, -35%) rotate(225deg) scaleX(-1);
+  }
+
+  & #safe {
+    min-width: 450px;
+    -moz-transform: translate(20%, -20%);
+    -o-transform: translate(20%, -20%);
+    -webkit-transform: translate(20%, -20%);
+    transform: translate(-10%, -30%);
+  }
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 19px 33px 0px rgba(186, 74, 44, 0.26);
+    -moz-box-shadow: 0px 19px 33px 0px rgba(186, 74, 44, 0.26);
+    box-shadow: 2.01px 0.67px 2.68px 0px rgba(149, 57, 20, 0.22);
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon-image {
+    width: 44px;
+    height: 44px;
+  }
+
+  &_type_square {
+    width: 340px;
+    height: 213px;
+    margin: 30px 30px 20px 0;
+    background-color: #FBF4EC;
+    border-radius: 10px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+
+    &::before {
+      width: 340px;
+      height: 213px;
+      bottom: 0;
+      left: 0;
+      content: '';
+      z-index: -1;
+      background: url('../../image/Ellipse_orange.png') no-repeat;
+      position: absolute;
+      transform: translateY(60px);      
+    }
+
+    &_above {
+      display: none;
+    }
+
+  }
+
+  &_type_no-float {
+    float: none;
+}
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .label {
+    display: none;
+
+    &_type_square {
+      display: none;
+
+      &_above {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .label {
+
+    &_type_square {
+      &_above {
+        margin: 0 auto;
+        max-width: $width-for-blocks-S;
+      }
+    }
+  }  
+}

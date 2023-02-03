@@ -1,0 +1,149 @@
+.about {
+  width: 1170px;
+  padding: 30px 0 30px 60px;
+  margin: 0 auto;
+  background-color: #FBF4E9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &__container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 20px 0;
+    max-width: 363px;
+    @include titles-L;
+  }
+
+  &__text {
+    margin: 0;
+    max-width: $width-for-blocks-L;
+    @include Open-Sans-text-L(600, normal)
+  }
+
+  &__button {
+    margin: 60px 0 30px;
+  }
+
+  &__image {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__logo {
+    background: #FFFBF6 url('../image/logo.png') center no-repeat;
+    background-size: 70% 37%;
+    position: absolute;
+    right: 68%;
+    z-index: 2;
+    border-radius: 20px;
+    -webkit-box-shadow: -1.16px -1px 4.66px 0 rgba(46, 29, 10, 0.25) inset, 1.16px 3.49px 4.66px 0 rgba(255, 255, 255) inset, 8px 7px 20px 0 rgba(98, 64, 14, 0.17);
+    -moz-box-shadow: -1.16px -1px 4.66px 0 rgba(46, 29, 10, 0.25) inset, 1.16px 3.49px 4.66px 0 rgba(255, 255, 255) inset, 8px 7px 20px 0 rgba(98, 64, 14, 0.17);
+    box-shadow: -1.16px -1px 4.66px 0 rgba(46, 29, 10, 0.25) inset, 1.16px 3.49px 4.66px 0 rgba(255, 255, 255) inset, 8px 7px 20px 0 rgba(98, 64, 14, 0.17);
+  }
+
+  &__logo:after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1280px) {
+  .about {
+    width: 920px;
+
+    &__title {
+      @include titles-M
+    }
+
+    &__text {
+      @include Open-Sans-text-M(600, normal)
+    }
+
+    &__button {
+      margin: 30px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 10px;
+
+    &__container {
+      width: 100%;
+      height: 50%;
+      align-items: center;      
+    }
+
+    &__title {
+      margin-top: 30px;
+      max-width: $width-for-blocks-L;
+    }
+
+    &__text {
+      max-width: $width-for-blocks-L;
+    }
+
+    &__button {
+      margin: 40px 0 40px;
+    }
+
+    &__image {
+      width: 60%;
+      position: relative;
+    }
+
+    &__logo {
+      right: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about {
+    max-width: 640px;
+    padding: 0;
+    margin-top: 15px;
+    background-color: #FFFFFF;
+
+    &__container {
+      margin: 0 15px;
+      box-sizing: border-box;
+      width: calc(100vw - 30px);
+      background-color: #FBF4E9;
+    }
+
+    &__title {
+      max-width: 300px;
+      @include titles-S
+    }
+
+    &__text {
+      max-width: 300px;
+      @include Open-Sans-text-M(400, normal)
+    }
+
+    &__image {
+      width: $width-for-blocks-S;
+    }
+
+    &__logo {
+      max-width: 107px;
+      right: 59%;
+    }
+  }
+}

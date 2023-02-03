@@ -1,0 +1,81 @@
+.orange-block {
+  width: 100%;
+  margin-top: 40px;
+  padding: 30px 40px 30px 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  @include horizontal-gradient;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include box-shadow;
+
+  &__text {
+    max-width: 50%;
+    margin: 0;
+    @include Montserrat-text-L(600, normal);
+    color: #FFFFFF;
+  }
+
+  &__list {
+    margin: 0;
+  }
+
+  &__list-text {
+    padding-left: 10px;
+    margin-top: 10px;
+    @include Open-Sans-text-L(400, normal);
+    color: #FFFFFF;
+    &::marker {
+      content: url('../image/marker.png');      
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .orange-block {
+    padding: 20px 10px 20px 10px;
+  
+    &__text {
+      @include Open-Sans-text-M(600, normal);
+    }
+
+    &__list-text {
+      @include Open-Sans-text-M(400, normal);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .orange-block {
+    max-width: $width-for-blocks-L;
+    padding: 30px;
+    margin: 40px auto 80px;
+    flex-direction: column;
+    align-items: center;    
+  
+    &__text {
+      max-width: 100%;
+      margin-bottom: 30px;
+      @include Open-Sans-text-L(600, normal);
+
+      &:last-of-type {
+        max-width: 100%;
+      }
+    }
+
+    &__list-text {
+      @include Open-Sans-text-L(400, normal);
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .orange-block {
+    max-width: $width-for-blocks-S;    
+
+    &__list {
+      padding: 0;
+    }
+  }
+}

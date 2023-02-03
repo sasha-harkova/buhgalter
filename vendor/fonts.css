@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    src: local('Open Sans'),
+        url(./OpenSans/OpenSans-Bold.woff) format('woff'), 
+        url(./OpenSans/OpenSans-Bold.woff2) format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-display: swap;
+    src: local('Open Sans'),
+        url(./OpenSans/OpenSans-BoldItalic.woff) format('woff'), 
+        url(./OpenSans/OpenSans-BoldItalic.woff2) format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-display: swap;
+    src: local('Open Sans'),
+        url(./OpenSans/OpenSans-Italic.woff) format('woff'), 
+        url(./OpenSans/OpenSans-Italic.woff2) format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    src: local('Open Sans'),
+        url(./OpenSans/OpenSans-Regular.woff) format('woff'), 
+        url(./OpenSans/OpenSans-Regular.woff2) format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    src: local('Open Sans'),
+        url(./OpenSans/OpenSans-SemiBold.woff) format('woff'), 
+        url(./OpenSans/OpenSans-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: swap;
+    src: local('Montserrat'),
+        url(./Montserrat/Montserrat-Bold.woff) format('woff'), 
+        url(./Montserrat/Montserrat-Bold.woff2) format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: swap;
+    src: local('Montserrat'),
+        url(./Montserrat/Montserrat-SemiBold.woff) format('woff'), 
+        url(./Montserrat/Montserrat-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-display: swap;
+    src: local('Montserrat'),
+        url(./Montserrat/Montserrat-SemiBoldItalic.woff) format('woff'), 
+        url(./Montserrat/Montserrat-SemiBoldItalic.woff2) format('woff2');
+    font-weight: 600;
+}

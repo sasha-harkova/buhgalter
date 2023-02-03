@@ -1,0 +1,52 @@
+.button {
+  width: 330px;
+  max-height: 65px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: none;
+  @include Open-Sans-text-L(600, normal);
+  cursor: pointer;
+
+  &_type_red {
+    background-color: #E64B13;
+    border: 1px solid #E64B13;
+    color: #FFFFFF;
+  }
+
+  &_type_red:hover {
+    border: 1px solid #E64B13;
+    background-color: #FFFFFF;
+    color: #E64B13;
+    transition-property: border, background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+  }
+
+  &_type_white {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #E64B13;
+  }
+
+  &_type_white:hover {
+    border: 1px solid #FFFFFF;
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    transition-property: border, background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .button {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .button {
+    width: 300px;
+  }
+}

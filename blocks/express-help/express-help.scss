@@ -1,0 +1,144 @@
+.express-help {
+  width: 1170px;
+  margin: 0 auto 90px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;  
+
+  &__photo {
+    min-width: 500px;
+    max-height: 480px;
+    background: url('../image/express_help_photo.jpg') no-repeat;
+    background-position: 50% 0;
+    background-size: auto 100%;
+    object-fit: contain;
+    position: relative;
+    @include box-shadow;
+
+    &:after {
+      width: 40%;
+      height: 100%;
+      content: '';
+      background-color: #E64B13;
+      opacity: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+  }
+
+  &__text {
+    margin: 40px 0 0;
+    width: $width-for-blocks-XL;
+    @include Open-Sans-text-L(400, normal);
+
+    &:first-of-type {
+      margin-top: 57px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+
+    &_type_span {
+      @include Open-Sans-text-L(700, italic);
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .express-help {
+    &__photo {
+      min-width: 40%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .express-help {
+    width: 920px;
+
+    &__text {
+      max-width: $width-for-blocks-S;
+      margin: 30px 0 0;
+      @include Open-Sans-text-M(400, normal);
+
+      &:first-of-type {
+        margin-top: 47px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+
+      &_type_span {
+        @include Open-Sans-text-M(700, italic);
+      }
+    }
+
+    &__photo {
+      max-width: 400px;
+      max-height: 480px;
+    }
+  }  
+}
+
+@media screen and (max-width: 960px) {
+  .express-help {
+    width: 100%;
+    margin: 0 auto 90px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    &__container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__photo {
+      margin: 0 auto;
+      max-width: $width-for-blocks-M;
+      min-height: 351px;
+      background-position: 40% 0;
+      background-size: auto 100%;
+    }
+
+    &__text {
+      max-width: 100%;
+      @include Open-Sans-text-L(400, normal);
+
+      &_type_span {
+        @include Open-Sans-text-L(700, italic);
+      }
+    }
+  }  
+}
+
+@media screen and (max-width: 640px) {
+  .express-help {
+    margin: 0 auto 80px;
+    align-items: center;
+
+    &__container {
+      align-items: flex-start;
+    }
+
+    &__photo {
+      max-width: $width-for-blocks-S;
+      min-height: $width-for-blocks-S;
+      min-height: 351px;
+      background-position: 40% 0;
+      background-size: auto 100%;
+    }
+
+    &__button {
+      align-self: center;
+    }
+  }  
+}

@@ -1,0 +1,128 @@
+.two-rules {
+  margin: 90px auto;
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    margin: 0;
+    max-width: $width-for-blocks-L;
+    @include Open-Sans-text-L(400, italic);
+
+    &_type_span {
+      margin: 47px 0 30px;
+      @include Open-Sans-text-L(700, italic)
+    }
+  }
+
+  &__item {
+    max-width: $width-for-blocks-L;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FBF4EC;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    & p {
+      max-width: $width-for-text-in-blocks-L;
+    }
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    @include Open-Sans-text-L(700, normal)
+  }
+
+  &__photo {
+    max-width: 540px;
+    margin-left: 30px;
+    align-self: center;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1280px) {
+  .two-rules {
+    width: 920px;
+
+    &__text {
+      max-width: $width-for-blocks-M;
+      @include Open-Sans-text-M(400, italic);
+      
+      &_type_span {
+        margin: 32px 0 15px;
+        @include Open-Sans-text-M(700, italic)
+      }
+    }
+  
+    &__item {
+      max-width: $width-for-blocks-M;
+      padding: 15px;
+      & p {
+        max-width: $width-for-text-in-blocks-M;
+      }
+  
+      &:last-of-type {
+        margin-bottom: 15px;
+      }
+    }
+  
+    &__title {
+      @include Open-Sans-text-M(700, normal)
+    }
+
+    &__photo {
+      max-width: 50%;  
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .two-rules {
+    margin: 50px auto;
+    width: 100%;
+    
+    flex-direction: column;
+    align-items: center;
+  
+    &__photo {
+      max-width: $width-for-blocks-M;
+      margin: 30px 0 0;
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .two-rules {
+    width: 100%;
+    margin: 60px auto;
+
+    &__text {
+      max-width: $width-for-blocks-S;
+
+      &_type_span {
+        margin: 37px 0 20px;
+      }
+    }
+  
+    &__item {
+      max-width: $width-for-blocks-S;
+      margin-bottom: 20px;
+      & p {
+        max-width: $width-for-text-in-blocks-S;
+      }
+  
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    } 
+  
+    &__photo {
+      max-width: $width-for-blocks-S;
+    }
+  }
+}

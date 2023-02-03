@@ -1,0 +1,27 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../vendor/itc-slider/itc-slider.css);
+
+@import "./mixins.scss";
+@import "../blocks/button/button.scss";
+@import "../blocks/heading/heading.scss";
+@import "../blocks/body/body.scss";
+@import "../blocks/about/about.scss";
+@import "../blocks/two-rules/two-rules.scss";
+@import "../blocks/tasks/tasks.scss";
+@import "../blocks/list/list.scss";
+@import "../blocks/orange-block/orange-block.scss";
+@import "../blocks/express-help/express-help.scss";
+@import "../blocks/table/table.scss";
+@import "../blocks/tabs/tabs.scss";
+@import "../blocks/label/label.scss";
+@import "../blocks/full-order/full-order.scss";
+@import "../blocks/scheme/scheme.scss";
+@import "../blocks/price/price.scss";
+@import "../blocks/mechanism/mechanism.scss";
+@import "../blocks/accordion/accordion.scss";
+@import "../blocks/algorithm/algorithm.scss";
+@import "../blocks/meeting/meeting.scss";
+@import "../blocks/offices/offices.scss";
+@import "../blocks/office/office.scss";
+@import "../blocks/menu/menu.scss";

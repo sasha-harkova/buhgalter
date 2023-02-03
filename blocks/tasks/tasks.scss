@@ -1,0 +1,147 @@
+.tasks {
+  margin: 160px 0 190px;
+
+  &__container {
+    padding: 30px 0 90px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FBF4EC;
+    position: relative;    
+  }
+
+  &__svg-top {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    z-index: -1;
+  }
+
+  &__svg-middle {
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: -1;
+    display: none;
+  }
+
+  &__svg-bottom {
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: -1;
+  }
+
+  &__ellipse {
+    position: absolute;
+    width: 15%;
+    top: -150px;
+
+    &:first-of-type {
+      left: 5%;      
+    }
+
+    &:last-of-type {
+      right: 5%;
+    }
+  }
+
+  &__box {
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    //background-color: #FBF4EC;
+  }
+
+  &__subtitle {
+    margin: 57px 0 40px;
+    max-width: 600px;
+    @include Montserrat-text-L(600, normal);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .tasks {
+    margin: 140px 0;
+
+    &__ellipse {
+      top: -120px;
+    }
+
+    &__box {
+      width: 920px;
+    }
+      
+    &__subtitle {
+      @include Montserrat-text-M(600, normal);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .tasks {
+    margin: 50px 0 0;    
+
+    &__container {
+      padding: 30px 15px 10px;
+
+      &:first-of-type {
+        margin-bottom: 90px;
+      }
+      
+      &:last-of-type {
+        padding: 30px 15px 10px;
+        background-color: #FFFFFF;
+      }
+    }
+
+    &__box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__ellipse {
+      display: none;
+    }
+
+    &__svg-middle {
+      display: block;
+    }
+
+    &__svg-bottom {
+      display: none;
+    }
+
+    &__subtitle {
+      @include Montserrat-text-M(600, normal);
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tasks {  
+    max-width: 640px;    
+
+    &__container {
+      max-width: 640px;
+      padding: 30px 15px 10px;
+
+      &:first-of-type {
+        margin-bottom: 60px;
+      }
+      
+      &:last-of-type {
+        padding: 30px 15px 10px;
+        background-color: #FFFFFF;
+      }
+    }
+
+    &__subtitle {
+      max-width: $width-for-blocks-S;
+      @include Montserrat-text-M(600, normal);      
+    }  
+  }
+}

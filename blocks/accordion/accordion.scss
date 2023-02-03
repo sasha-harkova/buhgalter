@@ -1,0 +1,36 @@
+.accordion {
+  width: 100%;
+  margin: 0 0 0;
+
+  &__item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__heading {
+    display: flex;  
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    width: 20px;
+    height: 30px;
+    margin-right: 30px;
+    transform: rotate(90deg);
+    transition: transform .3s linear;
+
+    &_rotated {
+      transform: rotate(-90deg);
+      transition: transform .3s linear;
+    }
+  }
+  
+  &__title {
+    @include titles-S;
+  }
+
+  &__hide-block {  
+    display: none;
+  }
+}

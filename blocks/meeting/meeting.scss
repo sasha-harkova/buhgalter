@@ -1,0 +1,128 @@
+.meeting {
+  width: 100%;
+  margin-top: 120px;
+  padding-bottom: 120px;
+  padding-top: 60px;
+  background-color: #FBF4EC;
+  object-fit: cover;
+  position: relative;
+
+  ::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: url(../image/back__meeting.png) top left/100% no-repeat;
+    left: 0;
+    bottom: 20%;
+    z-index: -1;
+  }
+
+  &__container {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+  }  
+
+  &__image {
+    width: 430px;
+    height: 340px;
+    margin-right: 50px;
+    border-radius: 10px;
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__box {
+    max-width: 680px;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 430px;
+    @include titles-L;    
+  }
+
+  &__text {
+    margin: 20px 0 40px;
+    @include Open-Sans-text-L(400, normal);
+
+    &_type_span {
+      @include Open-Sans-text-L(700, italic);
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .meeting {
+    padding-top: 40px;
+  
+    &__container {
+      width: 920px;
+    }
+  
+    &__image {
+      width: 320px;
+      height: 200px;
+    }
+  
+    &__box {
+      max-width: $width-for-blocks-L;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .meeting {
+    max-width: 960px;
+    margin-top: 90px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    ::before {
+      bottom: 10%;
+    }
+  
+    &__container {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__image {
+      width: $width-for-blocks-L;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+      display: none;
+      &_hidden {
+        display: block;
+      }
+    }
+  
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__button {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .meeting {
+    max-width: 640px;
+  
+    &__image {
+      width: 100%;
+    }
+  
+    &__box {
+      max-width: 100%;
+    }
+  }
+}
